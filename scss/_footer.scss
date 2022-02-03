@@ -32,6 +32,9 @@
     &__enlaces{
         cursor:pointer;
         margin-top:1.5rem;
+        @include m.tablet{
+            text-align:center;
+        }
         &:hover{
             color:v.$BrightBlue;
         }

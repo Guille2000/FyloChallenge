@@ -93,12 +93,12 @@ ul {
   }
 }
 .files__heading {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #070439;
 }
 @media (min-width: 768px) {
   .files__heading {
-    width: 80%;
+    width: 87%;
     text-align: left;
   }
 }
@@ -297,6 +297,7 @@ ul {
 @media (min-width: 768px) {
   .early__heading {
     text-align: left;
+    margin: 0;
   }
 }
 .early__texto {
@@ -307,6 +308,7 @@ ul {
 @media (min-width: 768px) {
   .early__texto {
     text-align: left;
+    width: 70%;
   }
 }
 .early__boton {
@@ -385,6 +387,11 @@ ul {
 .footer__enlaces {
   cursor: pointer;
   margin-top: 1.5rem;
+}
+@media (min-width: 768px) {
+  .footer__enlaces {
+    text-align: center;
+  }
 }
 .footer__enlaces:hover {
   color: #3065f8;

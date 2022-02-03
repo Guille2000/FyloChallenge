@@ -24,10 +24,10 @@
     }
 
     &__heading{
-        font-size:4rem;
+        font-size:3.5rem;
         color:v.$VeryDarkBlue;
         @include m.tablet{
-        width:80%;
+        width:87%;
         text-align:left;
         }
     }
