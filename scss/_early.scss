@@ -1,0 +1,61 @@
+@use 'variables' as v; 
+@use 'mixins' as m;
+
+.early{
+    text-align:center;
+    font-family:v.$fuenteBody;
+    background-color:v.$DesaturatedBlue;
+    color:#fff;
+    width:100%;
+    padding:3rem;
+    
+    &__heading{
+        font-size:2.3rem;
+        margin-bottom:1.2rem;
+
+    }
+
+    &__texto{
+        font-size:1.7rem;
+    }
+
+    &__boton{
+        font-weight:700;
+        padding:1.5rem 4rem;
+        color:#fff;
+        background-color:v.$BrightBlue;
+        border:none;
+        border-radius:0.6rem;
+        cursor:pointer;
+        margin:0 auto;
+        width:100%;
+        margin-top:2.2rem;
+        @include m.tablet{
+            width:40%;
+        }
+    }
+    &__input{
+        padding:1rem;
+        width:100%;
+        margin:0 auto;
+        border:none;
+    }
+
+    &__contenido{
+        @include m.tablet{
+            @include m.grid(2, 3rem);
+        }
+    }
+
+    &__empezar{
+        @include m.tablet{
+            grid-column:2/2;
+            text-align:left;
+        }
+    }
+    &__texto{
+        @include m.tablet{
+            grid-column:1/2;
+        }
+    }
+}

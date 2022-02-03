@@ -1,0 +1,62 @@
+@use 'variables' as v; 
+@use 'mixins' as m;
+
+.footer{
+    background-color:v.$VeryDarkBlue;
+    color:#fff;
+    padding:3.2rem;
+
+    &__contacto{
+        @include m.tablet{
+            @include m.grid(4, 3rem);
+            align-items: center;
+        }
+    }
+    &__iconos{
+        margin-top:2rem;
+        display:flex;
+        flex-direction:column;
+        gap:2rem;
+        font-size:1.9rem;
+        @include m.tablet{
+            grid-column:1/1;
+            margin-top:0;
+        }
+    }
+
+    &__links{
+        margin-top:3rem;
+        font-size:1.6rem;
+    }
+
+    &__enlaces{
+        cursor:pointer;
+        margin-top:1.5rem;
+        &:hover{
+            color:v.$BrightBlue;
+        }
+    }
+
+    &__redes{
+        font-size:2.6rem;
+        text-align:center;
+        margin-top:6rem;
+
+        .fa-facebook,
+        .fa-twitter,
+        .fa-instagram{
+            border-radius: 50%;
+            border: 1px solid white;
+            padding: 0.6rem;
+            cursor:pointer;
+
+            &:hover{
+                background-color:v.$BrightBlue;
+            }
+        }
+    }
+    &__red{
+        font-weight:400;
+        margin-left:1.6rem;
+    }
+}

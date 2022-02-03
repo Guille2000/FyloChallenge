@@ -1,0 +1,26 @@
+@use 'variables' as v; 
+@use 'mixins' as m;
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:4.2rem;
+    font-family:v.$fuenteHeading;
+
+    &__imagen{
+        width:65%;
+    }
+    .navegacion{
+        display:flex;
+        justify-content: space-between;
+
+        &__enlaces{
+            margin-left:0.9rem;
+            font-size:1.4rem;
+            font-weight:400;
+        }
+
+    }
+
+}
