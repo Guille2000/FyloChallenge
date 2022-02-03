@@ -24,12 +24,22 @@
     }
 
     &__heading{
-        font-size:3rem;
+        font-size:4rem;
+        color:v.$VeryDarkBlue;
+        @include m.tablet{
+        width:80%;
+        text-align:left;
+        }
     }
 
     &__texto{
         margin-top:3rem;
         font-size:1.5rem;
+        color:v.$VeryDarkBlue;
+        @include m.tablet{
+            text-align:left;
+            width:60%;
+            }
     }
 
     &__empezar{

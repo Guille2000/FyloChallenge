@@ -2,7 +2,6 @@
 @use 'mixins' as m;
 
 .early{
-    text-align:center;
     font-family:v.$fuenteBody;
     background-color:v.$DesaturatedBlue;
     color:#fff;
@@ -12,13 +11,20 @@
     &__heading{
         font-size:2.3rem;
         margin-bottom:1.2rem;
-
+        text-align:center;
+        @include m.tablet{
+        text-align:left;
+        }
     }
 
     &__texto{
         font-size:1.7rem;
-    }
-
+        text-align:center;
+        margin-bottom:3rem;
+        @include m.tablet{
+            text-align:left;
+            }
+        }
     &__boton{
         font-weight:700;
         padding:1.5rem 4rem;
@@ -43,7 +49,7 @@
 
     &__contenido{
         @include m.tablet{
-            @include m.grid(2, 3rem);
+            @include m.grid(2, 2rem);
         }
     }
 

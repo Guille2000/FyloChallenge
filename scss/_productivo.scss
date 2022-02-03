@@ -16,14 +16,16 @@
     &__heading{
         font-size:2rem;
         margin-bottom:2.5rem;
+        color:v.$VeryDarkBlue;
         @include m.tablet{
-            font-size:3rem;
+            font-size:3.4rem;
         }
     }
 
     &__texto{
         font-size:1.7rem;
         text-align:left;
+        color:v.$VeryDarkBlue;
         margin-bottom:2rem;
     }
 
@@ -49,7 +51,6 @@
         position:relative;
         margin-top:2rem;
         text-align:left;
-
         &:hover{
             color:v.$LightGray;
         }
